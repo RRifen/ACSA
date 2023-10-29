@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    td, th {
+        border: solid 1px;
+    }
+</style>
+<body>
+    <h1>Книги в библиотеке</h1>
+    <table>
+        <thead>
+            <tr>
+            <th>ID</th>
+            <th>Название</th>
+            <th>Жанр</th>
+            <th>Автор</th>
+            </tr>
+        </thead>
+        <tbody id="books_table_body">
+
+        </tbody>
+    </table>
+    <form action="" id="book_form_add">
+        <h1>Добавить книгу</h1>
+        <input type="text" placeholder="Enter book name..." id="book_name_add"></br>
+        <input type="text" placeholder="Enter book ganre..." id="book_genre_add"></br>
+        <input type="text" placeholder="Enter book author..." id="book_author_add"></br>
+        <button type="submit">Submit</button>
+    </form>
+    <form action="" id="book_form_delete">
+        <h1>Удалить книгу по ID</h1>
+        <input type="text" placeholder="Enter book id..." id="book_id_delete"></br>
+        <button type="submit">Submit</button>
+    </form>
+    <form action="" id="book_form_search">
+        <h1>Поиск книг по названию</h1>
+        <input type="text" placeholder="Enter book name..." id="book_name_search"></br>
+        <button type="submit">Submit</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+            <th>ID</th>
+            <th>Название</th>
+            <th>Жанр</th>
+            <th>Автор</th>
+            </tr>
+        </thead>
+        <tbody id="books_table_search">
+
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
